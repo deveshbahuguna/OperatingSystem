@@ -27,10 +27,10 @@ public static void DisplayWithlockVar()
     /// <param name="args"></param>
 public static void Main(String[] args)
  {
-     Thread th1=new Thread(DisplayWithlockVar);
-     Thread th2=new Thread(DisplayWithlockVar);
-      th1.Start();
-      th2.Start();
+     Thread thread1=new Thread(DisplayWithlockVar);
+     Thread thread2=new Thread(DisplayWithlockVar);
+      thread1.Start();
+      thread2.Start();
       Console.ReadLine();
   }
 }
