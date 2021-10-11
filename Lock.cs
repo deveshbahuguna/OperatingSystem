@@ -19,6 +19,11 @@ public static void DisplayWithlockVar()
     //Now another critical code ends     
      lockVar=false;      
   }
+
+    /// <summary>
+    /// This is the entry point.
+    /// </summary>
+    /// <param name="args"></param>
 public static void Main(String[] args)
  {
      Thread th1=new Thread(DisplayWithlockVar);
